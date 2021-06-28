@@ -8,3 +8,14 @@ O bloco, também criará um novo escopo. Chamamos de `block-scoped`
 elevação (hoists)
 
 ## let e const - são locais e só funcionam no escopo onde foi criada
+
+
+/* ProtoType 
+
+- Linguaguem baseada em prototipagem 
+- Uma cadeia de prototipagem 
+- proto
+*/
+
+#Type conversion(typecasting) x Type coersion
+*Alteração de um tipo de dado para outro tipo* 

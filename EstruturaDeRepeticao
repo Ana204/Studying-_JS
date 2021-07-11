@@ -1,0 +1,5 @@
+# ESTRUTURA DE REPETIÇÃO #
+
+* for 
+ ° break => para a execução do loop (usado dentro do if)
+ ° continue => pula a execução do momento (dentro do if)

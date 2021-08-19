@@ -1,34 +1,52 @@
 
 
-let score = 86
 
-let scoreA = score >= 90 && score <= 100
+function getScore(score) {
 
-let scoreB = score >= 80 && score <= 89
+  
+  let scoreA = score >= 90 && score <= 100;
 
-let scoreC = score >= 70 && score <= 79
+  let scoreB = score >= 80 && score <= 89;
 
-let scoreD = score >= 60 && score <= 69
+  let scoreC = score >= 70 && score <= 79;
 
-let scoreF = score < 60 && score >= 0 
+  let scoreD = score >= 60 && score <= 69;
 
-let scoreFinal
+  let scoreF = score < 60 && score >= 0;
 
-if (scoreA) {
-    
-    scoreFinal = "A"
+
+  let scoreFinal;
+
+  if (scoreA) {
+    scoreFinal = "A";
+  } 
+  else if (scoreB) {
+    scoreFinal = "B";
+  }
+   else if (scoreC) {
+    scoreFinal = "C";
+  } 
+  else if (scoreD) {
+    scoreFinal = "D";
+  } 
+  else if (scoreF) {
+    scoreFinal = "F";
+  } 
+  else{
+      console.log("Nota Inválida")
+  }
+  
+
+  return scoreFinal
 }
-else if(scoreB){
-    scoreFinal = "B"
-}
-else if(scoreC){
-    scoreFinal = "C"
-}
-else if(scoreD){
-    scoreFinal = "D"
-}
-else if(scoreF){
-    scoreFinal = "F"
-}
 
-console.log(scoreFinal)
+console.log(getScore(101))
+console.log(getScore(-1))
+console.log(getScore(0))
+console.log(getScore(1))
+console.log(getScore(45))
+console.log(getScore(60))
+console.log(getScore(86))
+console.log(getScore(90))
+console.log(getScore(50))
+
